@@ -1,0 +1,18 @@
+# cat linux_vuejs.yml
+---
+- name: Install Vue.js
+  hosts: localhost
+  gather_facts: false
+  become: true
+  tasks:
+    - name: removeNode.js
+      apt:
+        name: nodejs
+        state: absent
+        update_cache: yes
+    - name: Remove the globally package "@vue/cli".
+      npm:
+       name: "@vue/cli"
+       global: yes
+       state: absent
+       

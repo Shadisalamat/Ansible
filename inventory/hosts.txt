@@ -1,0 +1,3 @@
+
+[hosts]
+shadialsalamat-01774014616 ansible_connection=local

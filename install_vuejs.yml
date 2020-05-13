@@ -1,0 +1,16 @@
+# cat linux_vuejs.yml
+---
+- name: Install Vue.js
+  hosts: localhost
+  gather_facts: false
+  become: true
+  tasks:
+    - name: install  Node.js
+      apt:
+        name: nodejs
+        state: present
+
+    - name: Install @vue/cli
+      npm:
+        name: "@vue/cli"
+        global: true

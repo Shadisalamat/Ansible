@@ -1,0 +1,16 @@
+#ansible vars 
+#einvrioment version 
+
+#eniviroment variables for daraabase connection 
+
+#type
+#hostname
+#user
+#password
+#ssl certificates 
+#srv_crt
+#srv_key
+
+
+#srv_crt:
+#srv_key: 
